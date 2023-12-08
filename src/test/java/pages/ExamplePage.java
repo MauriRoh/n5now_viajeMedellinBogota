@@ -3,7 +3,6 @@ package pages;
 import com.core.utility.MasterPage;
 import org.junit.Assert;
 
-
 import static locators.Locators.*;
 
 public class ExamplePage extends MasterPage {
@@ -16,6 +15,7 @@ public class ExamplePage extends MasterPage {
     public void clickSelectClassPremiumEconomy() { auto_setClickElement(CLASS_PREMIUM_ECONOMY_BUTTON_XPATH);}
     public void clickDropdownPasajeros() { auto_setClickElement(DROPDOWN_PASAJEROS_BUTTON_XPATH);}
     public void clickOnTheChildrenSectionPlusButton() { auto_setClickElement(SECTION_PLUS_BUTTON_XPATH);}
+    public void clickSearchCard() { auto_setClickElement(SEARCH_CARD_XPATH);}
     public void clickOnTheInputOrigen() { auto_setClickElement(ORIGEN_INPUT_XPATH);}
     public void fillsInOrigin(String origin) {
         auto_setTextToInput(FILLS_ORIGIN_INPUT_XPATH, origin);

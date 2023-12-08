@@ -55,12 +55,17 @@ public class ExampleSteps {
         examplePage.clickOnTheChildrenSectionPlusButton();
     }
 
+    @And("el usuario clickea la card del buscador")
+    public void theUserClickSearchCard() {
+        examplePage.clickSearchCard();
+    }
+
     @And("el usuario clickea en el input Origen")
     public void theUserClickOnTheInputOrigen() {
         examplePage.clickOnTheInputOrigen();
     }
 
-    @And("^el usuario completa con \"(.*)\" en el input origen$")
+    @And("^el usuario completa el orige: \"(.*)\"$")
     public void theUserFillsInOrigin(String origin) {
         examplePage.fillsInOrigin(origin);
     }
@@ -75,7 +80,7 @@ public class ExampleSteps {
         examplePage.clickOnTheInputDestination();
     }
 
-    @And("^el usuario completa con \"(.*)\" en el input destino$")
+    @And("^el usuario completa el destino: \"(.*)\"$")
     public void theUserFillsInDestination(String destination) {
         examplePage.fillsInDestination(destination);
     }

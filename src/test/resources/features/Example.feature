@@ -11,11 +11,12 @@ Feature: Registro exitoso de un vuelo de ida desde Medellin a Bogota para dos pe
         And el usuario selecciona la clase Premium Economy
         And el usuario clickea el dropdown pasajeros
         And el usuario clickea en la seccion ninios el boton plus
+        And el usuario clickea la card del buscador
         And el usuario clickea en el input Origen
-        And el usuario completa con "<origin>" en el input origen
+        And el usuario completa el orige: "<origin>"
         And el usuario clickea en la opcion propuesta en origen
         And el usuario clickea en el input Destino
-        And el usuario completa con "<destination>" en el input destino
+        And el usuario completa el destino: "<destination>"
         And el usuario clickea en la opcion propuesta en destino
         And el usuario clickea el calendario para selecciona una fecha
         And el usuario clickea la flecha del calendario para buscar otros meses
@@ -32,5 +33,5 @@ Feature: Registro exitoso de un vuelo de ida desde Medellin a Bogota para dos pe
         Then el usuario al clickea el boton "Continuar" se completa exitosamente el registro del vuelo
 
         Examples:
-          | origin         | destination          |
-          | Medellín     | Bogotá     |
+          | origin   | destination |
+          | Medellín, MDE - Colombia | Bogotá, BOG - Colombia |
