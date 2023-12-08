@@ -210,7 +210,7 @@ Example of the enviroment and system information
 If you want to use this Framework to automate your own web application (of course), you only have to follow the steps that I leave you below. Let's go to that
 
 
-1. Open the ```pom.xml``` file that is in the root of the project, then, look for it property called ```<applicationUrl> https://underc0de.org/ </applicationUrl>``` and replace that address with that of your web application
+1. Open the ```pom.xml``` file that is in the root of the project, then, look for it property called ```<applicationUrl>https://www.latamairlines.com/co/es</applicationUrl>``` and replace that address with that of your web application
 
 <p align="center">
   <img src="img/pom.png"/>
@@ -237,7 +237,6 @@ If you want to use this Framework to automate your own web application (of cours
 ```
 ## Distributed by
 ```sd
-    * Underc0de.org
 ```
 
 ## Contributing Developers
